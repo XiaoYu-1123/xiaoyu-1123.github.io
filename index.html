@@ -202,6 +202,50 @@
             text-decoration: underline;
         }
 
+        /* --- 3. 实习经历区 --- */
+        .experience-item {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 35px;
+        }
+
+        .experience-logo {
+            flex: 0 0 90px;
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f7f7f7;
+            border: 1px solid #eee;
+            border-radius: 12px;
+        }
+
+        .experience-logo img {
+            width: 62px;
+            height: 62px;
+            object-fit: contain;
+        }
+
+        .experience-company {
+            color: #000;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .experience-period {
+            color: #666;
+            font-size: 0.92rem;
+            margin-bottom: 6px;
+        }
+
+        .experience-topic {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
         /* --- 移动端适配 --- */
         @media (max-width: 768px) {
             .header-section {
@@ -213,6 +257,9 @@
             .paper-item { flex-direction: column; }
             .paper-img { width: 100%; max-width: 300px; margin: 0 auto 15px auto; }
             .header-section { gap: 20px; }
+            .experience-item { gap: 18px; text-align: left; }
+            .experience-logo { flex-basis: 72px; width: 72px; height: 72px; }
+            .experience-logo img { width: 50px; height: 50px; }
         }
     </style>
 </head>
@@ -407,8 +454,21 @@
         </div>
     </div>
 
+    <div class="section-header">Research Experience</div>
+
+    <div class="experience-item">
+        <div class="experience-logo">
+            <img src="files/bytedance_logo.png" alt="ByteDance logo">
+        </div>
+        <div class="experience-details">
+            <div class="experience-company">ByteDance · PICO</div>
+            <div class="experience-period">2026.9 – Present</div>
+            <div class="experience-topic">Topic: XR World Model</div>
+        </div>
+    </div>
+
     <footer style="text-align: center; margin-top: 80px; padding-bottom: 30px; color: #999; font-size: 0.8rem;">
-        <p>&copy; 2026 Xiao Yu. Last updated: February 2026.</p>
+        <p>&copy; 2026 Xiao Yu. Last updated: October 2026.</p>
     </footer>
 
 </div>
